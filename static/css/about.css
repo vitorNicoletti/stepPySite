@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans:wght@100&family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:wght@100;300&family=Freeman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:wght@100;300&family=Freeman&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:wght@100;300;900&family=Freeman&family=Hind:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    background: radial-gradient(circle, rgba(53,51,205,1) 0%, rgba(0,0,0,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar{
+    background: transparent;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 1px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2; 
+    background: radial-gradient(circle, rgba(53,51,205,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.top_lista{
+    padding-top: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.item-menu a{
+    float: right;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 10px 4%;
+    padding-right: 40%;
+}
+
+.header-first-page{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.header-first-page img{
+    width: 30px;
+    height: 30px;
+    padding-top: 5%;
+    padding-right: 3%;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .header-first-page img{
+        width: 25px;
+        height: 25px;
+        padding-top: 5%;
+        padding-right: 3%;
+        color: #FFFFFF;
+        cursor: pointer;
+        z-index: 3;
+    }
+}
+
+.title{
+    color: #ffff;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .title{
+        color: #ffff;
+        font-family: "Hind", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+}
+
+
+.page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+@media (max-width: 1701px) {
+    .page{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.page a{
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    padding-bottom: 10px;
+    color: rgb(51, 113, 205);
+}
+
+@media (max-width: 768px) {
+    .page a{
+        font-family: "Hind", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        padding-bottom: 10px;
+        color: rgb(51, 113, 205);
+    }
+}
+
+.subtitles{
+    color: #ffff;
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.text{
+    color: #ffff;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: justify;
+    text-indent: 35px;
+}
+
+@media (max-width: 1581px) {
+    .text{
+        color: #ffff;
+        font-family: "Hind", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        padding-bottom: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: justify;
+        text-indent: 30px;
+    }
+}
+
+.signature{
+    color: #ffff;
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+@media (max-width: 1581px) {
+    .signature{
+        color: #ffff;
+        font-family: "Hind", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        text-align: center;
+        padding-top: 2%;
+    }
+}
+
+.team{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.integrant img{
+    height: 350px;
+    width: 280px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.integrant-name{
+    color: #ffff;
+    font-family: "Hind", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+}
+
+.integrant-lucca img{
+    height: 350px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.integrant-lucca{
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 40px;
+}

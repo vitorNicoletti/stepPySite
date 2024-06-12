@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../static/css/index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="../static/js/index.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    </head>
+ 
+    <body>
+        <nav class="navbar">
+
+            <ul class="top_lista">
+                <li class="item-menu">
+                    <a href="/">
+                        <span class="txt">Home</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="https://github.com/luccafm1/steppy">
+                        <span class="txt">Documentation</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu">
+                    <a href="/about">
+                        <span class="txt">About</span>
+                    </a>
+                </li>
+            </ul>   
+        </nav>
+
+        <div class="first-page">
+            <div class="header-first-page" onclick="showMenu()" id="btn"><img src="../static/images/icon_menu.png"></i></div>
+            <div class="body-first-page">
+                <div class="text-top">
+                    <div class="text-top-step">Step</div><a class="text-top-py">Py</a>
+                </div>
+                <div class="text-bottom">Algebraic calculator and graphical limits generator.</div>
+                <div class="text-bottom">Enter the equation you want us to calculate for you and click the calculator icon below: </div>
+                <form class="input-equation" id="form" onsubmit="return scrollToSolution(event)">
+                    <div class="input">
+                        <input type="text" placeholder="Ex: lim of x + 1 as x tends to 4" id="input" name="input">
+                    </div>
+                    <div class="solve-limit">
+                        <button type="button" id="solve-limit">
+                            <img src="../static/images/icon_calculator.png">
+                        </button>
+                    </div>
+                </form>
+            </div>   
+        </div>
+
+        <div class="second-page" id="second-page">
+            <div class="solution">
+                <div class="title-solution">Solution:</div>
+                <div class="output-solution" id="output-solution">
+                    {% if results %}
+                        {% for result in results %}
+                            <div class="result">
+                                {% for line in result %}
+                                    <div class="line"> </div>
+                                    {% if error %}
+                                        <div class="error"> </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                        {% if images %}
+                            {% for image in images %}
+                                {% if image %}
+                                    <div class="img-solution"> </div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    {% endif %}
+                    
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
